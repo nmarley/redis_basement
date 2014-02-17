@@ -22,18 +22,18 @@ Or install it yourself as:
 
 1. require() the gem.
 
-    require 'redis_basement'
+        require 'redis_basement'
 
 2. extend RedisBasement
 
-    module MyModule
-      extend RedisBasement
-      include HTTParty
+        module MyModule
+          extend RedisBasement
+          include HTTParty
 
 3. Call fetch() on resources that you want to GET.
 
-      fetch('http://localhost/resource') # cache page in Redis for 1 hour
-      fetch('http://localhost/resource2', 30) # cache page in Redis for 30 seconds
+        fetch('http://localhost/resource') # cache page in Redis for 1 hour
+        fetch('http://localhost/resource2', 30) # cache page in Redis for 30 seconds
 
 The fetch method depends on an existing get() method, such as that provided by including HTTParty or similar gem. Since HTTParty/net/http requests can't be serialized, the gem only caches the body of the requests in Redis. Patches welcome.
 
