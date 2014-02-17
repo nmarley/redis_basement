@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["nathan.marley@gmail.com"]
   spec.summary       = %q{Cache web pages in Redis.}
   spec.description   = %q{Don't go out for cached pages. Fetch them from the basement instead. Useful for development.}
-  spec.homepage      = "http://marley.io/redis_basement"
+  spec.homepage      = "http://github.com/nmarley/redis_basement"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
