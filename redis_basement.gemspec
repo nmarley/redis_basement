@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["nathan.marley@gmail.com"]
   spec.summary       = %q{Cache web pages in Redis.}
   spec.description   = %q{Don't go out for cached pages. Fetch them from the basement instead. Useful for development.}
-  spec.homepage      = ""
+  spec.homepage      = "http://marley.io/redis_basement"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "redis", "~> 3.0"
 
   spec.add_development_dependency "bundler", "~> 1.5"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", "~> 0"
 end
